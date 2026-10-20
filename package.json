@@ -1,0 +1,30 @@
+{
+  "name": "@ghostfail/autobiogap",
+  "version": "1.0.1",
+  "type": "module",
+  "main": "./src/register.ts",
+  "scripts": {
+    "build": "bun build src/register.ts --target bun --minify --outfile dist/autobiogap-extension.js --define BUILD_SHA=\"'$(git describe --always --dirty)'\"",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test dist/test/*.test.js"
+  },
+  "dependencies": {
+    "zod": ">=4"
+  },
+  "devDependencies": {
+    "@animalabs/chronicle": "0.3.0",
+    "@animalabs/connectome-host": "0.8.1",
+    "@animalabs/context-manager": "0.8.0",
+    "@animalabs/membrane": "0.5.82",
+    "@types/bun": "^1.4.2",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghostdotfail/autobiogap.git"
+  },
+  "trustedDependencies": [
+    "@animalabs/connectome-host"
+  ]
+}
