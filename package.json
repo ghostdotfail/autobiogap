@@ -1,6 +1,6 @@
 {
-  "name": "@ghostfail/autobiogap",
-  "version": "1.0.1",
+  "name": "@jonesfoods/autobiogap",
+  "version": "1.0.2",
   "type": "module",
   "main": "./src/register.ts",
   "scripts": {
@@ -9,22 +9,27 @@
     "test": "node --test dist/test/*.test.js"
   },
   "dependencies": {
-    "zod": ">=4"
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@animalabs/chronicle": "0.3.0",
     "@animalabs/connectome-host": "0.8.1",
     "@animalabs/context-manager": "0.8.0",
     "@animalabs/membrane": "0.5.82",
-    "@types/bun": "^1.4.2",
+    "@types/bun": "^1.4.4",
     "@types/node": "^22.0.0",
     "typescript": "^5.7.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ghostdotfail/autobiogap.git"
-  },
   "trustedDependencies": [
     "@animalabs/connectome-host"
-  ]
+  ],
+  "packageManager": "bun@1.4.4",
+  "engines": {
+    "node": "^22.23.4 || ^24.22.1 || >=26.12.1",
+    "bun": "1.4.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonesfoods/autobiogap.git"
+  }
 }
